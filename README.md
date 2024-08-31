@@ -6,10 +6,9 @@ This repository contains my personal dotfiles and configurations for various app
 
 1. [Neovim (NvChad)](#neovim-nvchad)
 2. [Karabiner-Elements](#karabiner-elements)
-3. [Rectangle](#rectangle)
-4. [WezTerm](#wezterm)
-5. [Git](#git)
+3. [WezTerm](#wezterm)
 
+Also need Rectangle installed for window management. 
 ## Neovim (NvChad)
 
 My Neovim configuration is based on NvChad with custom modifications for C++ development.
