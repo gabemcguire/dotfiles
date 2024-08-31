@@ -11,7 +11,7 @@ This repository contains my personal dotfiles and configurations for various app
 Also need Rectangle installed for window management. 
 ## Neovim (NvChad)
 
-My Neovim configuration is based on NvChad with custom modifications for C++ development.
+My Neovim configuration is based on NvChad with custom modifications for C++ and web development.
 
 ### Location
 - `~/.config/nvim/`
