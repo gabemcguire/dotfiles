@@ -56,5 +56,6 @@ Karabiner-Elements is used for custom key remappings and creating a Hyper key.
   - `Tab + E + M`: Open Messages
   - `Tab + E + N`: Open Apple Music
   - `Tab + E + .`: Open DBeaver
-
+- Other 
+    - `Tab + F` : Toggle focus (Note: Create a shortcut called 'Set Focus' and have it toggle focus)
 
