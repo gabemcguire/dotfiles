@@ -310,6 +310,52 @@
                         ]
                     },
                     {
+                        "description": "Focus Mode Toggle",
+                        "manipulators": [
+                            {
+                                "description": "Toggle Focus Mode (f)",
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "shortcuts run 'Set Focus'"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "focus_mode",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "focus_mode",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "name": "hyper",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper Key sublayer w",
                         "manipulators": [
                             {
