@@ -17,3 +17,17 @@ lspconfig.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" }
 }
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        diagnosticMode = "workspace",
+        useLibraryCodeForTypes = true,
+      },
+    },
+  },
+}

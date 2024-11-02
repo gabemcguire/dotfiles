@@ -187,12 +187,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open Gmail",
+                                "description": "Open Mail",
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Gmail.app'" }],
+                                "to": [{ "shell_command": "open -a 'Mail.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -273,6 +273,38 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'DBeaver.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open Discord",
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Discord.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open Postman",
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Postman.app'" }],
                                 "type": "basic"
                             }
                         ]

@@ -55,6 +55,7 @@ local plugins = {
       ensure_installed = {
         "clangd",
         "clang-format",
+        "pyright",
         "codelldb",
       }
     }
