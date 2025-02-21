@@ -233,9 +233,13 @@ local default_plugins = {
     lazy = false,
     config = function()
       require("better_escape").setup {
-        mapping = { "jk", "kj" }, -- your custom mappings
-        timeout = 200,            -- your custom timeout
-        keys = "<Esc>",           -- the key you want to map
+        modes = {
+          i = {
+            ["jk"] = function() vim.api.nvim_input("<ESC>") end,
+            ["kj"] = function() vim.api.nvim_input("<ESC>") end,
+          },
+        },
+        timeout = 200,
       }
     end
   },
@@ -255,11 +259,11 @@ local default_plugins = {
     -- tag = "v2.15", -- uncomment to pin to a specific release
     init = function()
       -- VimTeX configuration goes here, e.g.
-    vim.g.vimtex_view_method = 'general'
-    vim.g.vimtex_view_general_viewer = 'open'
-    vim.g.vimtex_view_general_options = ''
-    vim.g.vimtex_compiler_method = 'tectonic'
-    vim.g.vimtex_quickfix_mode = 0
+      vim.g.vimtex_view_method = 'general'
+      vim.g.vimtex_view_general_viewer = 'open'
+      vim.g.vimtex_view_general_options = ''
+      vim.g.vimtex_compiler_method = 'tectonic'
+      vim.g.vimtex_quickfix_mode = 0
     end
   },
   -- Only load whichkey after all the gui

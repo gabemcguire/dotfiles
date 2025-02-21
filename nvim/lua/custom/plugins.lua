@@ -57,6 +57,8 @@ local plugins = {
         "clang-format",
         "pyright",
         "codelldb",
+        "volar",    -- Vue language server
+        "typescript-language-server",  -- TypeScript server
       }
     }
   }
